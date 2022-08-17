@@ -1,0 +1,292 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+/* CSS VARIABLES */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation bar : Logo and Image */
+#logo {
+    margin: 12px -4px;
+}
+
+#logo img {
+
+    margin: 0 40px;
+    height: 70px;
+    width: 70px;
+}
+
+/* Navigation bar : List Styling */
+#navbar ul {
+    display: flex;
+    margin-top: 30px;
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 4px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(241, 237, 237);
+    display: block;
+    padding: 4px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    /* height: 500px; */
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('food bg_2.jpg') no-repeat center center/cover;
+    height: 500px;
+    width: 1500px;
+    z-index: -1;
+    opacity: 0.85;
+    /* padding: 3px 200px; */
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    /* padding-bottom: 6px; */
+    font-family: 'Roboto Slab', serif;
+}
+
+#home .title {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+/* Services section */
+#services {
+    margin: 10px;
+    display: flex;
+
+
+}
+
+#services .box {
+    border: 2px solid black;
+    text-align: center;
+    margin: 1px 4px;
+    padding: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(216, 217, 218);
+
+
+}
+
+#services-container {
+    margin-top: 120px;
+}
+
+section h1 {
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+/* Client section */
+
+#client-section h2 {
+    text-align: center;
+}
+
+#client-section ::before {
+    content: "";
+    position: absolute;
+    background: url('food bg_2.jpg')no-repeat center center/cover;
+    height: 30%;
+    width: 25%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#client-section .clients {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+#clients {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item img {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+
+}
+#contact h1{
+  color: white;
+  text-align: center;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('food contact_2.jpg')no-repeat center center/cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+}
+#contact-box .form-group {
+    text-align: center;
+}
+
+#contact {
+    padding-top: 60px;
+}
+
+#contact label {
+    color: white;
+    font-size: 30px
+}
+
+#contact-box input,
+#contact-box textarea{
+    display: block;
+    width: 200%;
+    padding: 0.1rem;
+    
+}
+
+#contact input {
+    background-color: white;
+    color: black;
+    height: 30px;
+    margin-left: -90px;
+   
+}
+
+input {
+    text-align: center;
+}
+ form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgb(151, 142, 142);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+footer .center {
+    text-align: center;
+}
+
+
+/* Utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 24px;
+}
+
+.h-primary-center {
+    text-align: center;
+}
+
+/* .h-secondary  */
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(94, 71, 71);
+    margin: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(219, 216, 216);
+    border: 2px solid black;
+}
+
+.textcenter {
+    text-align: center;
+}
